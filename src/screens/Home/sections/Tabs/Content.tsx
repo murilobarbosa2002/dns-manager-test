@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
 import { Button } from "@/components/ui/button";
 
+import { TableData } from "../Table/TableSection";
+
 export interface FieldValues {
   [key: string]: string;
 }
@@ -30,13 +32,24 @@ export interface ContentProps {
       label: string;
     };
   };
+  addTableData?: (data: TableData) => void;
+  type: string;
 }
 
-const Content: React.FC<ContentProps> = ({ text, key, inputs }) => {
+const Content: React.FC<ContentProps> = ({ text, key, inputs, addTableData, type }) => {
   const { handleSubmit, control, formState: { errors } } = useForm<FieldValues>();
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    console.log(data);
+    const tableData = {
+      type: type,
+      hostname: data[inputs.inputOne.id],
+      value: data[inputs.inputTwo.id],
+      ttl: parseInt(data[inputs.inputThree.id]),
+    };
+
+    if (addTableData) {
+      addTableData(tableData);
+    }
   };
 
   return (

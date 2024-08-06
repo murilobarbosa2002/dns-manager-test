@@ -20,7 +20,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "a"
     },
     {
         key: "aaaa",
@@ -41,7 +42,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "aaaa"
     },
     {
         key: "cname",
@@ -62,7 +64,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "cname"
     },
     {
         key: "mx",
@@ -83,7 +86,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "mx"
     },
     {
         key: "txt",
@@ -104,7 +108,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "txt"
     },
     {
         key: "ns",
@@ -125,7 +130,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "ns"
     },
     {
         key: "srv",
@@ -146,7 +152,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "srv"
     },
     {
         key: "caa",
@@ -167,7 +174,8 @@ const ContentsData: ContentProps[] = [
                 placeholder: "3600",
                 label: "TLL (Seconds)"
             }   
-        }
+        },
+        type: "caa"
     },
 ]
 
